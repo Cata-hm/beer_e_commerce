@@ -1,18 +1,39 @@
-import ArrowLeftBack from "../ArrowLeftBack/ArrowLeftBack";
-import IconDots from "../IconDots/IconDots";
+import React, { useEffect, useState } from "react";
 import styles from "./navBar.module.css";
 
 const BottomNavBar = () => {
+  const [isSelected, setIsSelected] = useState(false); // Add useState hook for selected state
+
+  useEffect(() => {
+    // Check if current route is "/"
+    if (window.location.pathname === "/") {
+      setIsSelected(true);
+    } else {
+      setIsSelected(false);
+    }
+  }, []); // Run this effect only once on component mount
+
+  const handleRouteSelect = () => {
+    setIsSelected(!isSelected); // Toggle isSelected state when route is selected
+  };
+
   return (
     <div className={styles.BottomNavBar}>
       <div className={styles.home}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          fill="none"
+          fill={isSelected ? "#FF9F24" : "none"} // Set fill color based on isSelected state
           viewBox="0 0 24 24"
           strokeWidth={1.5}
-          stroke="#8F8F8F"
+          stroke={isSelected ? "#FF9F24" : "#8F8F8F"}
           className="w-6 h-6"
+          style={{
+            filter: isSelected ? "drop-shadow(0px 0px 5px #FF9F24)" : "none", // Apply shadow style based on isSelected state
+            WebkitFilter: isSelected
+              ? "drop-shadow(0px 0px 5px #FF9F24)"
+              : "none",
+          }}
+          onClick={handleRouteSelect} // Add onClick handler to handle route selection
         >
           <path
             strokeLinecap="round"
