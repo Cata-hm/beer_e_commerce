@@ -18,6 +18,14 @@ export const getProductById = async (id) => {
   }
 };
 
+export const getStockAndPriceByCode = async (code) => {
+  try {
+    const resp = await axios.get(`api/stock-price/${code}`);
+    return { success: true, data : resp.data };
+  } catch (error) {
+    return { success: false, data: [] };
+  }
+};
 
 export const getProductBySku = async (sku) => {
   try {

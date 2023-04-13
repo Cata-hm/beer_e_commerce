@@ -21,6 +21,14 @@ export default [
                 code: "10170",
                 name: "Half Barrel",
             },
+            {
+                code: "10170",
+                name: "Half Barrel",
+            },
+            {
+                code: "10170",
+                name: "Half Barrel",
+            },
         ],
     },
     {
