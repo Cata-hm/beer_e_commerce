@@ -1,2 +1,2 @@
 # beer_e_commerce
-beer e commerce
+Prueba técnica sobre una beer e-commerce 
