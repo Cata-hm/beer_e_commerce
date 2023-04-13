@@ -1,0 +1,14 @@
+.cardsContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  overflow-x: auto;
+  height: 400px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 50px;
+  padding-bottom: 70px;
+}

@@ -1,0 +1,55 @@
+.allbutton,
+.beerbutton,
+.winebutton {
+  height: 48px;
+  left: 24px;
+  top: 304px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.allbutton {
+  width: 58px;
+  padding: 8px 16px;
+  background: white;
+  color: black;
+}
+
+.beerbutton {
+  width: 138px;
+  left: 98px;
+  background: #ff9f24;
+  color: #ffffff;
+}
+
+.winebutton {
+  width: 106px;
+  left: 254px;
+  background: #ffffff;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 90px;
+}
+
+.detailButtons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

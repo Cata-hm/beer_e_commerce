@@ -1,0 +1,15 @@
+/* globals.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  color: black;
+  background: rgb(245, 245, 245);
+}
+
+.detail {
+  color: black;
+  background: white;
+}

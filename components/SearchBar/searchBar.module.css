@@ -1,0 +1,36 @@
+.searchBarContainer {
+  justify-content: center;
+  align-items: center;
+  width: auto;
+}
+.searchbar {
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  margin-top: 108px;
+  width: 327px;
+  height: 48px;
+  left: 24px;
+  top: 185px;
+  background: #ffffff;
+  border-radius: 12px;
+}
+.magnifyingGlassIcon {
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: currentColor;
+  position: absolute; /* Added position absolute to position the icon */
+  left: 0.5rem; /* Adjusted the left position to align the icon */
+  top: 50%; /* Adjusted the top position to vertically center the icon */
+  transform: translateY(-50%);
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  /* Add responsive styles for screens with maximum width of 768px or less */
+  .searchBarContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
